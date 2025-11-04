@@ -12,7 +12,7 @@ export default function FailurePage() {
             Oops! Wrong Answer
           </h1>
           <p className="text-2xl text-white/90 mb-8 drop-shadow">
-            Don't give up! Try again!
+            Don&apos;t give up! Try again!
           </p>
           
           <div className="flex flex-col gap-4">
