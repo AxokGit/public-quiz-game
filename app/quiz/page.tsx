@@ -72,7 +72,7 @@ export default function QuizPage() {
   if (isLoading) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600">
-        <div className="text-white text-2xl">Loading...</div>
+        <div className="text-white text-2xl">Chargement...</div>
       </div>
     );
   }
@@ -86,7 +86,7 @@ export default function QuizPage() {
           {/* Progress */}
           <div className="mb-6">
             <div className="flex justify-between text-white mb-2">
-              <span className="font-semibold">Question {currentQuestionIndex + 1} of {questions.length}</span>
+              <span className="font-semibold">Question {currentQuestionIndex + 1} sur {questions.length}</span>
               <span className="font-semibold">{Math.round(((currentQuestionIndex + 1) / questions.length) * 100)}%</span>
             </div>
             <div className="w-full bg-white/20 rounded-full h-3">
@@ -132,7 +132,7 @@ export default function QuizPage() {
                 : 'bg-white/30 text-white/50 cursor-not-allowed'
             }`}
           >
-            {currentQuestionIndex < questions.length - 1 ? 'Next Question' : 'Submit Quiz'}
+            {currentQuestionIndex < questions.length - 1 ? 'Question suivante' : 'Soumettre le Quiz'}
           </button>
         </div>
       </main>

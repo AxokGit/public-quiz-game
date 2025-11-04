@@ -9,10 +9,10 @@ export default function FailurePage() {
         <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-12 shadow-2xl border border-white/20">
           <div className="text-8xl mb-6">😢</div>
           <h1 className="text-5xl font-bold text-white mb-4 drop-shadow-lg">
-            Oops! Wrong Answer
+            Oops! Mauvaise réponse
           </h1>
           <p className="text-2xl text-white/90 mb-8 drop-shadow">
-            Don&apos;t give up! Try again!
+            N'abandonne pas ! Essaie encore !
           </p>
           
           <div className="flex flex-col gap-4">
@@ -20,14 +20,14 @@ export default function FailurePage() {
               href="/quiz"
               className="inline-block px-12 py-4 text-2xl font-bold text-red-600 bg-white rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:bg-red-50"
             >
-              🔄 Retry Quiz
+              🔄 Réessayer le Quiz
             </Link>
             
             <Link
               href="/"
               className="inline-block px-8 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white/20 transition-all duration-300"
             >
-              Back to Home
+              Retour à l'accueil
             </Link>
           </div>
         </div>

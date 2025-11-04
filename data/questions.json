@@ -1,32 +1,57 @@
 [
   {
     "id": 1,
-    "question": "What is the capital of France?",
-    "options": ["London", "Berlin", "Paris", "Madrid"],
-    "correctAnswer": 2
+    "question": "Quelle est la particularité de la frontière entre le Canada et les États-Unis ?",
+    "options": [
+      "Elle traverse le plus grand lac du monde",
+      "C’est la plus longue frontière non militarisée au monde",
+      "Elle change de place légèrement chaque année",
+      "Elle a été tracée par des castors sur la neige"
+    ],
+    "correctAnswer": 1
   },
   {
     "id": 2,
-    "question": "What is 2 + 2?",
-    "options": ["3", "4", "5", "6"],
-    "correctAnswer": 1
-  },
-  {
-    "id": 3,
-    "question": "Which planet is known as the Red Planet?",
-    "options": ["Venus", "Mars", "Jupiter", "Saturn"],
-    "correctAnswer": 1
-  },
-  {
-    "id": 4,
-    "question": "Who painted the Mona Lisa?",
-    "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+    "question": "Quelle est l’origine du mot « Canada » ?",
+    "options": [
+      "Un ancien mot inuit signifiant « pays froid »",
+      "Une déformation d’un mot espagnol pour « canard »",
+      "Un mot iroquoien signifiant « village »",
+      "Un nom donné par les explorateurs français en hommage à un ami"
+    ],
     "correctAnswer": 2
   },
   {
-    "id": 5,
-    "question": "What is the largest ocean on Earth?",
-    "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+    "id": 3,
+    "question": "Le sirop d’érable canadien représente environ quelle part de la production mondiale ?",
+    "options": [
+      "25 %",
+      "50 %",
+      "71 %",
+      "Plus de 75 %"
+    ],
     "correctAnswer": 3
+  },
+  {
+    "id": 4,
+    "question": "Quelle créature fantastique figure sur une pièce de monnaie canadienne ?",
+    "options": [
+      "Un griffon sur la pièce de 2 dollars",
+      "Un castor ailé sur la pièce de 5 cents",
+      "Un orignal sur la pièce de 1 dollar",
+      "Une chimère... mais seulement lors d’un tirage spécial !"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 5,
+    "question": "Quel événement a inspiré la naissance de la « politesse canadienne » devenue légendaire ?",
+    "options": [
+      "Une loi de 1879 obligeant à dire « pardon » dans les lieux publics",
+      "Une campagne de sensibilisation du gouvernement dans les années 1960",
+      "Une habitude culturelle héritée de la coexistence pacifique entre francophones et anglophones",
+      "Une stratégie pour ne pas geler pendant les hivers trop longs"
+    ],
+    "correctAnswer": 2
   }
 ]

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Quiz Challenge",
-  description: "Test your knowledge and win amazing prizes!",
+  title: "Défi Quiz",
+  description: "Teste tes connaissances et gagnes un prix incroyable !",
 };
 
 export default function RootLayout({
