@@ -10,6 +10,13 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ success: true, message: 'Webhook not configured' });
     }
 
+    const { message, score, totalQuestions, timeTaken } = body;
+    const minutes = Math.floor(timeTaken / 60);
+    const seconds = timeTaken % 60;
+    const timeString = minutes > 0 
+      ? `${minutes} min ${seconds} sec` 
+      : `${seconds} sec`;
+
     // Send to Discord webhook
     const response = await fetch(webhookUrl, {
       method: 'POST',
@@ -17,11 +24,23 @@ export async function POST(request: NextRequest) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        content: body.message || 'Quiz completed successfully!',
+        content: message || 'Quiz completed successfully!',
         embeds: [{
           title: '🎉 Quiz Completed!',
           description: 'A user has successfully completed the quiz!',
-          color: 0x00ff00,
+          color: score === totalQuestions ? 0x00ff00 : 0xffa500,
+          fields: [
+            {
+              name: '📊 Score',
+              value: `${score}/${totalQuestions} (${Math.round((score / totalQuestions) * 100)}%)`,
+              inline: true,
+            },
+            {
+              name: '⏱️ Time',
+              value: timeString,
+              inline: true,
+            },
+          ],
           timestamp: new Date().toISOString(),
         }],
       }),
